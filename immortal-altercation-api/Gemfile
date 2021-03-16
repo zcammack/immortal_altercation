@@ -21,6 +21,8 @@ gem 'puma', '~> 4.1'
 gem 'active_model_serializers'
 
 gem 'rack-cors'
+
+gem 'webpacker', '~> 6.x'
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.4.2', require: false
 
