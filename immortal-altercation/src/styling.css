@@ -1,0 +1,21 @@
+.grid-container {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: auto auto;
+    margin-left: 10%;
+    margin-right: 10%;
+    height: auto;
+    width: auto;
+    border: 1px solid black;
+    justify-content: stretch;
+    grid-row-gap: 2%;
+    padding: 5%;
+    background: white;
+    overflow: auto;
+    height: 200%;
+  }
+  
+  .selection-container {
+    color: red;
+    background: white;
+  }
