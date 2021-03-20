@@ -3,7 +3,6 @@ import Combatant2Abilities from './combatant2Abilities'
 
 class Combatant2 extends React.Component {
     render() {
-        
         return (
             <div>
                 <img src={this.props.combatant2.img_url} alt={'no image'} width={400} height={500} mode='fit'></img>
@@ -13,5 +12,4 @@ class Combatant2 extends React.Component {
         )
     }
 }
-
 export default Combatant2

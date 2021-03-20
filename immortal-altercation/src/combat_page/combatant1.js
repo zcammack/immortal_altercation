@@ -12,5 +12,4 @@ class Combatant1 extends React.Component {
         )
     }
 }
-
 export default Combatant1

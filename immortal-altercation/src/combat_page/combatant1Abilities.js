@@ -2,9 +2,7 @@ import React from "react";
 
 class Combatant1Abilities extends React.Component {
     render() {
-        
         return (
-            
             <div>
                 <button id={this.props.abilities[0].name} data-id={this.props.abilities[0].combatant_id} onClick={(event) => this.props.handleClick(this.props.abilities[0])}>{this.props.abilities[0].name}</button>
              <br></br>
@@ -18,5 +16,4 @@ class Combatant1Abilities extends React.Component {
         )
     }
 }
-
 export default Combatant1Abilities

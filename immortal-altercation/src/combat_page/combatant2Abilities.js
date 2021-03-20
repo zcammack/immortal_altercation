@@ -1,4 +1,3 @@
-
 import React from 'react';
 
 class Combatant2Abilities extends React.Component {
@@ -17,5 +16,4 @@ class Combatant2Abilities extends React.Component {
         )
     }
 }
-
 export default Combatant2Abilities

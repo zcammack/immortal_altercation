@@ -1,17 +1,19 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import { BrowserRouter as Router, Route } from 'react-router-dom';
+import Navbar from './Navbar'
+import SelectionContainer from './character_creation/selection_container'
+import CombatContainer from './combat_page/combat_container'
+import Welcome from './WelcomePage'
 
-ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+ReactDOM.render((
+  <Router>
+    <div>
+      <Navbar />
+      <Route exact path="/" component={Welcome} />
+      <Route exact path="/character_select" component={SelectionContainer} />
+      <Route exact path="/combat" component={CombatContainer} />
+    </div>
+  </Router>),
   document.getElementById('root')
-);
-
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+); 
