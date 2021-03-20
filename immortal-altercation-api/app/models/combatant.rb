@@ -1,3 +1,3 @@
 class Combatant < ApplicationRecord
-    has_many :abilities
+    has_many :abilities, dependent: :destroy
 end

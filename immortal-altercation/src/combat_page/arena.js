@@ -1,5 +1,4 @@
 import React from 'react';
-import styles from './styling.module.css'
 
 class Arena extends React.Component {
 

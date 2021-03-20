@@ -6,7 +6,7 @@ class Combatant1Abilities extends React.Component {
         return (
             
             <div>
-                <button id={this.props.abilities[0].id} combatant_id={this.props.abilities[0].combatant_id} onClick={(event) => this.props.handleClick(this.props.abilities[0])}>{this.props.abilities[0].name}</button>
+                <button id={this.props.abilities[0].name} data-id={this.props.abilities[0].combatant_id} onClick={(event) => this.props.handleClick(this.props.abilities[0])}>{this.props.abilities[0].name}</button>
              <br></br>
                 <button id={this.props.abilities[1].id} combatant_id={this.props.abilities[1].combatant_id} onClick={(event) => this.props.handleClick(this.props.abilities[1])}>{this.props.abilities[1].name}</button>
             <br></br>

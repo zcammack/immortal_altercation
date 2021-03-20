@@ -1,9 +1,9 @@
 import React from 'react';
 import CombatContainer from './combat_page/combat_container'
-import SelectionContainer from './selection_page/selection_container'
-import styling from 'styled-components'
+import SelectionContainer from './character_creation/selection_container'
+import styled from 'styled-components'
 
-const Background = styling.div`
+const Background = styled.div`
   min-height:100%;
 `
 class App extends React.Component {

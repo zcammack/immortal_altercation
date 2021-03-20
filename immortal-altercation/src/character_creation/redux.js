@@ -1,9 +1,9 @@
 import React from "react";
-import styling from 'styled-components'
+import styled from 'styled-components'
 import '../styling.css'
 
 
-const combatantBorder = styling('div')`
+const CombatantBorder = styled('div')`
    
     text-align: center;
     margin-top: 10%;

@@ -2,7 +2,7 @@ import React from "react";
 import Combatant1 from './combatant1'
 import Combatant2 from './combatant2'
 import Arena from './arena'
-import styles from './styles.module.css'
+import styles from './styling.module.css'
 
 
 class CombatContainer extends React.Component {

@@ -34,7 +34,6 @@ class CombatantForm extends React.Component {
                     
                     <div>
                         <input onChange={(event) => this.props.handleAbilityChange("abilityOne", "name", event.target.value)} value={this.props.state.abilityOne.name} name="abilityOneName" placeholder="Ability One Name" type="text" />
-
                         <input onChange={(event) => this.props.handleAbilityChange("abilityOne", "image", event.target.value )} value={this.props.state.abilityOne.image} name="abilityOneImage" placeholder="Ability One Image" type="text" />
                     </div>
 
@@ -50,60 +49,60 @@ class CombatantForm extends React.Component {
 
                 </div>
 
-                <div className={styles.AbilityTwo}>
+                <div className={styles.abilityTwo}>
 
                     <label>Ability Two</label>
 
                     <div>
-                        <input onChange={(event) => this.props.handleAbilityChange("AbilityTwo", "name", event.target.value)} value={this.props.state.AbilityTwo.name} placeholder="Ability Two Name"type="text" name="AbilityTwoName" />
-                        <input onChange={(event) => this.props.handleAbilityChange("AbilityTwo", "image", event.target.value)} value={this.props.state.AbilityTwo.image} placeholder="Ability Two Image"type="text" name="AbilityTwoImage" />
+                        <input onChange={(event) => this.props.handleAbilityChange("abilityTwo", "name", event.target.value)} value={this.props.state.abilityTwo.name} name="abilityTwoName" placeholder="Ability Two Name" type="text" />
+                        <input onChange={(event) => this.props.handleAbilityChange("abilityTwo", "image", event.target.value)} value={this.props.state.abilityTwo.image} name="abilityTwoImage" placeholder="Ability Two Image"type="text" />
                     </div>
                     
                     <div>
                         <label>Damage Points </label>
-                        <button id={this.props.state.AbilityTwo} onClick={(event) => this.props.handleDamageClick('+','AbilityTwo','damage', event)}>+</button>
+                        <button id={this.props.state.abilityTwo} onClick={(event) => this.props.handleDamageClick('+','abilityTwo','damage', event)}>+</button>
 
-                        <span id="AbilityTwoDamageSpan" value={this.props.state.AbilityTwo.damage}>{this.props.state.AbilityTwo.damage}</span>
+                        <span id="abilityTwoDamageSpan" value={this.props.state.abilityTwo.damage}>{this.props.state.abilityTwo.damage}</span>
 
-                        <button id={this.props.state.AbilityTwo} onClick={(event) => this.props.handleDamageClick('-', 'AbilityTwo', 'damage', event)}>-</button>
+                        <button id={this.props.state.abilityTwo} onClick={(event) => this.props.handleDamageClick('-', 'abilityTwo', 'damage', event)}>-</button>
                     </div>
 
                 </div>
 
-                <div className={styles.AbilityThree}>
+                <div className={styles.abilityThree}>
 
                     <label>Ability Three</label>
                     
                     <div>
-                        <input onChange={(event) => this.props.handleAbilityChange("AbilityThree", "name", event.target.value)} value={this.props.state.AbilityThree.name} placeholder="Ability Three Name"type="text" name="AbilityThreeName" />
-                        <input onChange={(event) => this.props.handleAbilityChange("AbilityThree", "image", event.target.value)} value={this.props.state.AbilityThree.image} placeholder="Ability Three Image"type="text" name="AbilityThreeImage" />
+                        <input onChange={(event) => this.props.handleAbilityChange("abilityThree", "name", event.target.value)} value={this.props.state.abilityThree.name} name="abilityThreeName" placeholder="Ability Three Name"type="text" />
+                        <input onChange={(event) => this.props.handleAbilityChange("abilityThree", "image", event.target.value)} value={this.props.state.abilityThree.image} name="abilityThreeName" placeholder="Ability Three Image"type="text" />
                     </div>
                     
                     <div>
                         <label>Damage Points </label>
-                        <button id={this.props.state.AbilityThree.damage} onClick={(event) => this.props.handleDamageClick('+','AbilityThree','damage', event)}>+</button>
-                        <span id="AbilityThreeDamageSpan" value={this.props.state.AbilityThree.damage}>{this.props.state.AbilityThree.damage}</span>
-                        <button id={this.props.state.AbilityThree.damage} onClick={(event) => this.props.handleDamageClick('-', 'AbilityThree', 'damage', event)}>-</button>
+                        <button id={this.props.state.abilityThree.damage} onClick={(event) => this.props.handleDamageClick('+','abilityThree','damage', event)}>+</button>
+                        <span id="abilityThreeDamageSpan" value={this.props.state.abilityThree.damage}>{this.props.state.abilityThree.damage}</span>
+                        <button id={this.props.state.abilityThree.damage} onClick={(event) => this.props.handleDamageClick('-', 'abilityThree', 'damage', event)}>-</button>
                     </div>
 
                 </div>
 
                
 
-                <div className={styles.AbilityFour}>
+                <div className={styles.abilityFour}>
 
                     <label>Ability Four</label>
                    
                     <div>
-                        <input onChange={(event) => this.props.handleAbilityChange("AbilityFour", "name", event.target.value)} value={this.props.state.AbilityFour.name} placeholder="Ability Four Name"type="text" name="AbilityFourName" />
-                        <input onChange={(event) => this.props.handleAbilityChange("AbilityFour", "image", event.target.value)} value={this.props.state.AbilityFour.image} placeholder="Ability Four Image"type="text" name="AbilityFourImage" />
+                        <input onChange={(event) => this.props.handleAbilityChange("abilityFour", "name", event.target.value)} value={this.props.state.abilityFour.name} name="abilityFourName" placeholder="Ability Four Name"type="text" />
+                        <input onChange={(event) => this.props.handleAbilityChange("abilityFour", "image", event.target.value)} value={this.props.state.abilityFour.image} name="abilityFourName" placeholder="Ability Four Image"type="text" />
                     </div>
                    
                     <div>
                         <label>Damage Points</label>
-                        <button id={this.props.state.AbilityFour.damage} onClick={(event) => this.props.handleDamageClick('+', 'AbilityFour', 'damage', event)}>+</button>
-                        <span id="AbilityFourDamageSpan" value={this.props.state.AbilityFour.damage}>{this.props.state.AbilityFour.damage}</span>
-                        <button id={this.props.state.AbilityFour.damage} onClick={(event) => this.props.handleDamageClick('-', 'AbilityFour', 'damage', event)}>-</button>
+                        <button id={this.props.state.abilityFour.damage} onClick={(event) => this.props.handleDamageClick('+', 'abilityFour', 'damage', event)}>+</button>
+                        <span id="abilityFourDamageSpan" value={this.props.state.abilityFour.damage}>{this.props.state.abilityFour.damage}</span>
+                        <button id={this.props.state.abilityFour.damage} onClick={(event) => this.props.handleDamageClick('-', 'abilityFour', 'damage', event)}>-</button>
                     </div>
 
                 </div>
